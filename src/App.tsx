@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from "./components/Navbar.tsx"
 import Billboard from "./components/Billboard.tsx";
 import MovieList from "./components/MovieList.tsx";
+import InfoModal from "./components/InfoModal.tsx";
 
 const movies = [
     {
@@ -48,7 +49,9 @@ function App() {
           <div className="pb-40">
               <MovieList data={movies} title="Trending Now" />
               <MovieList data={movies} title="My List" />
+              <InfoModal/>
           </div>
+
       </div>
 
   )
